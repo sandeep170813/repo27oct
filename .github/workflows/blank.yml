@@ -1,4 +1,4 @@
-name: actionsworkflow
+name: myfirstworkflow
 on: workflow_dispatch
 jobs:
   build:
