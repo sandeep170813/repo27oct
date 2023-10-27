@@ -25,6 +25,10 @@ jobs:
          name: my-artifact
          path: path/to/artifact/ 
       - name: list the files after download
-        run: ls
+        run: ls       
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT" 
 
            
