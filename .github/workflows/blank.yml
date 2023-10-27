@@ -1,3 +1,4 @@
+name: actionsworkflow
 on: workflow_dispatch
 jobs:
   build:
