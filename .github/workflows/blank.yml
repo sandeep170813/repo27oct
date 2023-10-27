@@ -16,4 +16,15 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
          name: my-artifact
-         path: path/to/artifact/  
+         path: path/to/artifact/ 
+      - name: list the files after upload
+        run: ls   
+      - name: download artifact
+        uses: actions/upload-artifact@v3
+        with:
+         name: my-artifact
+         path: path/to/artifact/ 
+      - name: list the files after download
+        run: ls
+
+           
