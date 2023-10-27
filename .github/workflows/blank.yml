@@ -9,7 +9,7 @@ jobs:
       - name: list all the files
         run: ls   
       - name: upload artifact  
-      - uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
          name: my-artifact
          path: path/to/artifact/  
